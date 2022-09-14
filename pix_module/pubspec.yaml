@@ -1,4 +1,4 @@
-name: core
+name: pix_module
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
@@ -12,12 +12,10 @@ dependencies:
     sdk: flutter
   common_dependencies:
     path: ../common_dependencies
-  login_module:
-    path: ../login_module
-  home_module:
-    path: ../home_module
-  pix_module:
-    path: ../pix_module
+  common:
+    path: "../common"
+  extended_masked_text: ^2.3.1
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
