@@ -1,4 +1,4 @@
-name: core
+name: meus_cartoes_module
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
@@ -12,21 +12,15 @@ dependencies:
     sdk: flutter
   common_dependencies:
     path: ../common_dependencies
-  login_module:
-    path: ../login_module
-  home_module:
-    path: ../home_module
-  pix_module:
-    path: ../pix_module
-  extrato_module:
-    path: ../extrato_module
-  meus_cartoes_module:
-    path: ../meus_cartoes_module
+  common:
+    path: ../common
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  build_runner: ^2.2.1
+  mobx_codegen: ^2.0.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
