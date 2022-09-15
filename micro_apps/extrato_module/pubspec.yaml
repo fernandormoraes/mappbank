@@ -1,4 +1,4 @@
-name: pix_module
+name: extrato_module
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
@@ -11,11 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   common_dependencies:
-    path: ../common_dependencies
+    path: ../../common_dependencies
   common:
-    path: "../common"
-  extended_masked_text: ^2.3.1
-  intl: ^0.17.0
+    path: ../../common
 
 dev_dependencies:
   flutter_test:
