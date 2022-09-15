@@ -11,9 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   common_dependencies:
-    path: "../common_dependencies"
+    path: ../../common_dependencies
   common:
-    path: "../common"
+    path: ../../common
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,4 @@
-name: meus_cartoes_module
+name: login_module
 description: A new Flutter package project.
 version: 0.0.1
 publish_to: none
@@ -11,16 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   common_dependencies:
-    path: ../common_dependencies
+    path: ../../common_dependencies
   common:
-    path: ../common
+    path: ../../common
+  mask_text_input_formatter: ^2.4.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  build_runner: ^2.2.1
-  mobx_codegen: ^2.0.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

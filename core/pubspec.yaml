@@ -13,15 +13,15 @@ dependencies:
   common_dependencies:
     path: ../common_dependencies
   login_module:
-    path: ../login_module
+    path: ../micro_apps/login_module
   home_module:
-    path: ../home_module
+    path: ../micro_apps/home_module
   pix_module:
-    path: ../pix_module
+    path: ../micro_apps/pix_module
   extrato_module:
-    path: ../extrato_module
+    path: ../micro_apps/extrato_module
   meus_cartoes_module:
-    path: ../meus_cartoes_module
+    path: ../micro_apps/meus_cartoes_module
 
 dev_dependencies:
   flutter_test:
