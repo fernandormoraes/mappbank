@@ -150,20 +150,25 @@ class HomePage extends StatelessWidget {
                           color: Colors.grey.shade200,
                           borderRadius: BorderRadius.circular(8)),
                       child: Row(
-                        children: const [
-                          Padding(
+                        children: [
+                          const Padding(
                             padding: EdgeInsets.only(left: 16.0),
                             child: Icon(
                               Icons.credit_card,
                               size: 18,
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 8.0),
-                            child: Text(
-                              'Meus cartões',
-                              style: TextStyle(
-                                  fontSize: 12, fontWeight: FontWeight.bold),
+                          InkWell(
+                            onTap: () {
+                              Modular.to.pushNamed('/meus_cartoes/');
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.only(left: 8.0),
+                              child: Text(
+                                'Meus cartões',
+                                style: TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.bold),
+                              ),
                             ),
                           ),
                         ],

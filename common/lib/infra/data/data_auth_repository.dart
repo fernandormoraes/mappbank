@@ -14,6 +14,6 @@ class DataAuthRepository implements AuthRepository {
     DefaultResponse defaultResponse =
         await _userDatasource.getUserByLogin(login, password);
 
-    return right(UserEntity.fromJson(defaultResponse.data));
+    return right(UserEntity.fromJson(defaultResponse.data.first));
   }
 }

@@ -1,6 +1,6 @@
-class DefaultResponse {
+class DefaultResponse<T> {
   final String message;
-  final Map<String, dynamic> data;
+  final List<Map<String, dynamic>> data;
 
   DefaultResponse(this.message, this.data);
 

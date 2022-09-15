@@ -270,6 +270,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
+  meus_cartoes_module:
+    dependency: transitive
+    description:
+      path: meus_cartoes_module
+      relative: true
+    source: path
+    version: "0.0.1"
   mobx:
     dependency: "direct main"
     description:
