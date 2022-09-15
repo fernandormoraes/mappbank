@@ -60,33 +60,39 @@ class HomePage extends StatelessWidget {
                     padding: const EdgeInsets.all(24),
                     child: Column(
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: const [
-                                Text(
-                                  'Conta',
+                        InkWell(
+                          onTap: () {
+                            Modular.to.pushNamed('/extrato/');
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: const [
+                                  Text(
+                                    'Conta',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Spacer(),
+                                  Icon(
+                                    Icons.arrow_forward_ios_rounded,
+                                    size: 14,
+                                  )
+                                ],
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(top: 12.0),
+                                child: Text(
+                                  'R\$ 72.000,00',
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold),
                                 ),
-                                Spacer(),
-                                Icon(
-                                  Icons.arrow_forward_ios_rounded,
-                                  size: 14,
-                                )
-                              ],
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(top: 12.0),
-                              child: Text(
-                                'R\$ 72.000,00',
-                                style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.bold),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ],
                     ),
@@ -105,7 +111,7 @@ class HomePage extends StatelessWidget {
                                 onPressed: () =>
                                     Modular.to.pushNamed('/area_pix/'),
                                 title: 'Área Pix',
-                                icon: Icons.pix),
+                                icon: Icons.pix_outlined),
                             const CarouselFunctionWidget(
                                 onPressed: null,
                                 title: 'Pagar',
@@ -117,11 +123,11 @@ class HomePage extends StatelessWidget {
                             const CarouselFunctionWidget(
                                 onPressed: null,
                                 title: 'Depositar',
-                                icon: Icons.savings),
+                                icon: Icons.savings_outlined),
                             const CarouselFunctionWidget(
                                 onPressed: null,
                                 title: 'Recarga',
-                                icon: Icons.smartphone),
+                                icon: Icons.smartphone_outlined),
                             const CarouselFunctionWidget(
                                 onPressed: null,
                                 title: 'Doação',
